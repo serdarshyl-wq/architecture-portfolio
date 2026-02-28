@@ -1,0 +1,109 @@
+.homepage-content {
+    position: absolute;
+    top: 5rem;
+    right: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1.5rem;
+}
+
+.homepage-heading {
+    color: #fff;
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: clamp(4rem, 4vw, 4rem);
+    text-align: right;
+    transform: translateY(-100%);
+    opacity: 0;
+    text-transform: uppercase;
+}
+
+.homepage-explore-btn {
+    font-family: 'Syne', sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 1rem 3rem;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 0;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: background 0.3s, border-color 0.3s;
+    transform: translateY(30px);
+    opacity: 0;
+    border-radius: 10px;
+}
+
+.homepage-explore-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.7);
+}
+
+.homepage-arrow {
+    color: #fff;
+    font-size: 1.5rem;
+    transform: translateY(30px);
+    opacity: 0;
+    cursor: pointer;
+    margin-right: 5.5rem;
+    margin-top: -1.8rem;
+}
+
+@media (min-width: 769px) and (max-width: 1280px) {
+    .homepage>div:first-child {
+        height: 100svh;
+    }
+
+    .homepage-content {
+        top: clamp(2rem, 3vw, 3rem);
+        right: clamp(2rem, 3vw, 3rem);
+    }
+
+    .homepage-heading {
+        font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+    }
+
+    .homepage-explore-btn {
+        font-size: clamp(0.85rem, 1.2vw, 1rem);
+        padding: clamp(0.6rem, 1vw, 0.8rem) clamp(1.5rem, 2.5vw, 2rem);
+    }
+
+    .homepage-arrow {
+        margin-right: clamp(2.5rem, 4vw, 4rem);
+    }
+}
+
+@media (max-width: 768px) {
+    .homepage>div:first-child {
+        height: 100svh;
+    }
+
+    .homepage-content {
+        top: 3rem;
+        right: auto;
+        left: 50%;
+        transform: translateX(-50%);
+        align-items: center;
+        width: 90%;
+    }
+
+    .homepage-heading {
+        font-size: clamp(2rem, 7vw, 3rem);
+        text-align: center;
+    }
+
+    .homepage-explore-btn {
+        font-size: 1rem;
+        padding: 0.8rem 2rem;
+        margin-top: -1rem;
+    }
+
+    .homepage-arrow {
+        margin-right: 0;
+    }
+}

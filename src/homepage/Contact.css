@@ -1,0 +1,92 @@
+.contact-social-link {
+    transition: transform 0.3s, color 0.3s;
+}
+
+.contact-social-link i {
+    transition: color 0.3s;
+}
+
+.contact-social-link:hover {
+    transform: scale(1.1);
+}
+
+.contact-social-link.social-instagram:hover {
+    color: #E1306C;
+}
+
+.contact-social-link.social-linkedin:hover {
+    color: #0077B5;
+}
+
+.contact-social-link.social-x:hover {
+    color: #000;
+}
+
+.contact-input {
+    border-bottom-width: 1.5px !important;
+}
+
+@media (min-width: 769px) and (max-width: 1280px) {
+    .contact-section {
+        padding: 5rem 2.5rem;
+    }
+
+    .contact-brand {
+        margin-left: 0 !important;
+    }
+
+    .contact-socials-section {
+        margin-left: 0 !important;
+    }
+
+    .contact-brand-name {
+        font-size: clamp(2.5rem, 5vw, 4rem) !important;
+    }
+
+    .contact-brand-sub {
+        font-size: clamp(1.5rem, 3vw, 2.5rem) !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-section {
+        padding: 4rem 1.5rem;
+        align-items: flex-start;
+    }
+
+    .contact-title {
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        transform: none !important;
+        margin-bottom: 3rem;
+        font-size: clamp(2.2rem, 7vw, 3rem) !important;
+    }
+
+    .contact-section>div>div {
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+
+    .contact-section .w-1\/2 {
+        width: 100% !important;
+    }
+
+    .contact-brand,
+    .contact-socials-section {
+        margin-left: 0 !important;
+    }
+
+    .contact-brand-name {
+        font-size: 2.8rem !important;
+    }
+
+    .contact-brand-sub {
+        font-size: 1rem !important;
+    }
+
+    .contact-socials-section {
+        transform: scale(0.85);
+        transform-origin: top left;
+    }
+}

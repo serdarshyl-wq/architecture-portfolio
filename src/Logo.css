@@ -1,0 +1,75 @@
+.logo {
+  font-family: 'Syne', sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  line-height: 1;
+  display: inline-flex;
+  color: #ffffff80;
+}
+
+.logo-letter-wrapper {
+  display: inline-block;
+  overflow: hidden;
+}
+
+.logo-letter {
+  display: inline-block;
+}
+
+.logo-sm {
+  font-size: 1.5rem;
+}
+
+.logo-lg {
+  font-size: clamp(4rem, 10vw, 8rem);
+  letter-spacing: 0.08em;
+}
+
+.logo-group {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.logo-subtitle {
+  font-family: 'Syne', sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  line-height: 1;
+  color: #ffffff80;
+  font-size: clamp(1.5rem, 3.5vw, 3rem);
+  margin: 0;
+  transform: translateY(30px);
+  opacity: 0;
+}
+
+@media (min-width: 769px) and (max-width: 1280px) {
+  .logo-lg {
+    font-size: clamp(3rem, 5vw, 5rem) !important;
+  }
+
+  .logo-subtitle {
+    font-size: clamp(1.5rem, 1.8vw, 2rem) !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo-group {
+    left: 50% !important;
+    transform: translateX(-50%);
+    bottom: 2rem !important;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+  }
+
+  .logo-lg {
+    font-size: clamp(2.5rem, 8vw, 4rem);
+  }
+
+  .logo-subtitle {
+    font-size: clamp(0.9rem, 2.5vw, 1.5rem);
+  }
+}

@@ -1,0 +1,75 @@
+@media (min-width: 769px) and (max-width: 1280px) {
+    .exterior-title {
+        font-size: clamp(2rem, 3vw, 2.5rem) !important;
+        padding: clamp(0.8rem, 1.2vw, 1rem) clamp(1.5rem, 2.5vw, 2.5rem) !important;
+    }
+
+    .exterior-counter {
+        bottom: clamp(2rem, 4vw, 4rem);
+    }
+
+    .exterior-counter-inner {
+        font-size: clamp(5rem, 8vw, 8rem) !important;
+        height: clamp(5rem, 8vw, 8rem) !important;
+    }
+
+    .exterior-counter-number {
+        line-height: clamp(5rem, 8vw, 8rem) !important;
+        height: clamp(5rem, 8vw, 8rem) !important;
+    }
+
+    .exterior-slogan {
+        top: 30%;
+    }
+
+    .exterior-slogan-word {
+        font-size: clamp(1.8rem, 3vw, 2.5rem) !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .exterior-title {
+        font-size: clamp(2.5rem, 6vw, 2.5rem) !important;
+        padding: 1.5rem !important;
+        left: 50% !important;
+        transform: translateX(-50%);
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    .exterior-image-wrapper {
+        width: 85% !important;
+        height: 60vh !important;
+        border-radius: 1rem !important;
+    }
+
+    .exterior-counter-inner {
+        font-size: clamp(8rem, 25vh, 12rem) !important;
+        height: 25vh !important;
+    }
+
+    .exterior-counter-number {
+        line-height: 25vh !important;
+        height: 25vh !important;
+    }
+
+    .exterior-counter {
+        right: auto !important;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 1rem !important;
+    }
+
+    .exterior-slogan {
+        right: auto !important;
+        left: 50%;
+        top: 40%;
+        transform: translate(-50%, -50%);
+        align-items: center;
+    }
+
+    .exterior-slogan-word {
+        font-size: clamp(1.7rem, 5vw, 2rem) !important;
+        text-align: center;
+    }
+}

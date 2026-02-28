@@ -1,0 +1,95 @@
+.interior-slide:nth-child(2) .interior-image {
+    object-position: center calc(50% - 12rem);
+}
+
+.interior-slide:nth-child(3) .interior-image {
+    object-position: center calc(50% + 6rem);
+}
+
+@media (min-width: 769px) and (max-width: 1280px) {
+    .interior-title {
+        font-size: clamp(2rem, 3vw, 2.5rem) !important;
+        padding: clamp(0.8rem, 1.2vw, 1rem) clamp(1.5rem, 2.5vw, 2.5rem) !important;
+    }
+
+    .interior-counter {
+        bottom: clamp(2rem, 3.5vw, 3rem);
+    }
+
+    .interior-counter-inner {
+        font-size: clamp(5rem, 8vw, 8rem) !important;
+        height: clamp(5rem, 8vw, 8rem) !important;
+    }
+
+    .interior-counter-number {
+        line-height: clamp(5rem, 8vw, 8rem) !important;
+        height: clamp(5rem, 8vw, 8rem) !important;
+    }
+
+    .interior-slogan {
+        top: 30%;
+    }
+
+    .interior-slogan-word {
+        font-size: clamp(1.8rem, 3vw, 2.5rem) !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .interior-title {
+        font-size: clamp(2.5rem, 6vw, 2.5rem) !important;
+        padding: 1.5rem !important;
+        left: 50% !important;
+        transform: translateX(-50%);
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    .interior-image-wrapper {
+        width: 85% !important;
+        height: 60vh !important;
+        border-radius: 1rem !important;
+    }
+
+    .interior-slide:nth-child(2) .interior-image {
+        object-position: center center;
+    }
+
+    .interior-slide:nth-child(3) .interior-image {
+        object-position: center center;
+    }
+
+    .interior-counter-inner {
+        font-size: clamp(8rem, 25vh, 12rem) !important;
+        height: 25vh !important;
+    }
+
+    .interior-counter-number {
+        line-height: 25vh !important;
+        height: 25vh !important;
+    }
+
+    .interior-counter {
+        right: auto !important;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 1rem !important;
+    }
+
+    .interior-slogan {
+        right: auto !important;
+        left: 50%;
+        top: 40%;
+        transform: translate(-50%, -50%);
+        align-items: center;
+    }
+
+    .interior-slogan-word {
+        font-size: clamp(1.7rem, 5vw, 2rem) !important;
+        text-align: center;
+    }
+
+    .interior-slogan>div:nth-child(3) .interior-slogan-word {
+        font-size: clamp(1.3rem, 4vw, 1.6rem) !important;
+    }
+}
