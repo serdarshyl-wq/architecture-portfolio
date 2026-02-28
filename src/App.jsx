@@ -21,6 +21,22 @@ function App() {
     window.scrollTo(0, 0)
     ScrollTrigger.clearScrollMemory()
     ScrollTrigger.refresh()
+
+    // Sayfa tamamen yüklendiğinde preloader'ı kaldır
+    const removePreloader = () => {
+      const preloader = document.getElementById('preloader')
+      if (preloader) {
+        preloader.style.opacity = '0'
+        setTimeout(() => preloader.remove(), 500)
+      }
+    }
+
+    if (document.readyState === 'complete') {
+      removePreloader()
+    } else {
+      window.addEventListener('load', removePreloader)
+      return () => window.removeEventListener('load', removePreloader)
+    }
   }, [])
 
   useEffect(() => {
